@@ -1,0 +1,71 @@
+body {
+    background-color: rgb(242, 239, 229); 
+    background-image: url('../../img/wrinkled_page.jpg');
+    background-size: cover; 
+    background-position: center center; 
+    background-attachment: fixed;
+    padding: 10px 50px 50px 50px;
+    margin: 0;
+}
+
+nav {
+    text-emphasis: none;
+    text-align: left;
+    font-family: "aktiv-grotesk", sans-serif;
+    font-weight: 700;
+    padding: 10px 10px 10px 0px;
+}
+
+nav a {
+    text-decoration: none;
+    color: rgb(40, 106, 206);
+}
+
+header {
+    margin: 0;
+    padding-bottom: 50px;
+    font-family: "aktiv-grotesk", sans-serif;
+    text-align: center;
+    font-size: 100px;
+    color: rgb(40, 106, 206);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    gap: 30px; 
+    padding: 50px 0px 25px 0px;
+}
+
+.image-text {
+    display: flex; 
+    justify-content: center;  
+    align-items: center;  
+    text-align: left; 
+    width: 80%; 
+    max-width: 1000px; 
+}
+
+.image-text img {
+    width: 280px; 
+    height: auto;
+    margin-right: 20px; 
+}
+
+.image-text p {
+    font-size: 24px;
+    color: #333;
+    margin: 0; 
+    padding: 100px;
+    background-color: rgb(231, 227, 215);
+    font-family: "aktiv-grotesk", sans-serif;
+    width: 60%; 
+}
+
+
