@@ -1,6 +1,6 @@
 body {
     background-color: rgb(242, 239, 229); 
-    background-image: url('../../img/wrinkled_page.jpg');
+    background-image: url('../../img/new_backgroundimg.png');
     background-size: cover; 
     background-position: center center; 
     background-attachment: fixed;
@@ -18,11 +18,11 @@ header {
     font-size: 100px;
     color: rgb(40, 106, 206);
     height: 100vh;
-    position: relative; /* Add relative positioning for child absolute positioning */
+    position: relative; 
 }
 
 header .text-overlay {
-    z-index: 1; /* Ensure the text stays on top */
+    z-index: 1; 
 }
 
 header h1 {
@@ -31,13 +31,13 @@ header h1 {
 }
 
 header img {
-    width: 300px; /* Resize the image to your desired size */
-    height: auto; /* Maintain aspect ratio */
-    transform: rotate(-15deg); /* Rotate the image */
-    position: absolute; /* Absolute positioning */
-    top: 130px; /* Adjust the image's position above the text */
-    right: 85px; /* Adjust the image's position to the right */
-    z-index: 0; /* Ensure the image stays behind the text */
+    width: 400px; 
+    height: auto; 
+    transform: rotate(-15deg); 
+    position: absolute; 
+    top: 120px; 
+    right: 85px; 
+    z-index: 0; 
 }
 
 header a {
@@ -61,8 +61,8 @@ header a {
     text-align: center;
     width: 80%;
     max-width: 1000px;
-    position: relative; /* Make the container a positioning context for absolute positioning */
-    padding-top: 50px; /* Add space for the sun image to sit on top */
+    position: relative; 
+    padding-top: 50px; 
 }
 
 .image-text img {
@@ -83,30 +83,30 @@ header a {
 }
 
 .image-text .sun-image {
-    position: absolute; /* Position absolutely inside the .image-text container */
-    top: 250px; /* Move the sun image above the text box */
-    right: -200px; /* Adjust this value to center or move the sun left or right */
-    width: 400px; /* Resize the sun image */
-    height: auto; /* Maintain aspect ratio */
-    z-index: 2; /* Ensure the sun image is above the text box */
+    position: absolute; 
+    top: 250px; 
+    right: -200px; 
+    width: 400px; 
+    height: auto;
+    z-index: 2; 
 }
 
 .image-text .music-image {
-    position: absolute; /* Position absolutely inside the .image-text container */
-    top: -350px; /* Move the sun image above the text box */
-    right: 200px; /* Adjust this value to center or move the sun left or right */
-    width: 400px; /* Resize the sun image */
-    height: auto; /* Maintain aspect ratio */
-    z-index: 2; /* Ensure the sun image is above the text box */
+    position: absolute; 
+    top: -350px; 
+    right: 200px; 
+    width: 400px; 
+    height: auto; 
+    z-index: 2;
 }
 
 .image-text .matcha-image {
-    position: absolute; /* Position absolutely inside the .image-text container */
-    top: 150px; /* Move the sun image above the text box */
-    right: -225px; /* Adjust this value to center or move the sun left or right */
-    width: 400px; /* Resize the sun image */
-    height: auto; /* Maintain aspect ratio */
-    z-index: 2; /* Ensure the sun image is above the text box */
+    position: absolute; 
+    top: 150px; 
+    right: -225px; 
+    width: 400px; 
+    height: auto; 
+    z-index: 2; 
 }
 
 .image-text .matchalatte-image {
