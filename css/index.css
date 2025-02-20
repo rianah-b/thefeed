@@ -17,3 +17,10 @@ img {
   padding: 0px 0px 50px 0px;
   
 }
+
+.click_here {
+  width: 20%;
+  height: auto;
+  margin-left: -20%;
+  margin-top: -50%;
+}

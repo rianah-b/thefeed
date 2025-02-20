@@ -8,32 +8,43 @@ body {
     margin: 0;
 }
 
-nav {
-    text-emphasis: none;
-    text-align: left;
-    font-family: "aktiv-grotesk", sans-serif;
-    font-weight: 700;
-    padding: 10px 10px 10px 0px;
-}
-
-nav a {
-    text-decoration: none;
-    color: rgb(40, 106, 206);
-}
-
 header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin: 0;
     padding-bottom: 50px;
     font-family: "aktiv-grotesk", sans-serif;
-    text-align: center;
     font-size: 100px;
     color: rgb(40, 106, 206);
     height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    position: relative; /* Add relative positioning for child absolute positioning */
 }
+
+header .text-overlay {
+    z-index: 1; /* Ensure the text stays on top */
+}
+
+header h1 {
+    margin: 0;
+    padding: 0;
+}
+
+header img {
+    width: 300px; /* Resize the image to your desired size */
+    height: auto; /* Maintain aspect ratio */
+    transform: rotate(-15deg); /* Rotate the image */
+    position: absolute; /* Absolute positioning */
+    top: 130px; /* Adjust the image's position above the text */
+    right: 85px; /* Adjust the image's position to the right */
+    z-index: 0; /* Ensure the image stays behind the text */
+}
+
+header a {
+    text-decoration: none;
+    color: inherit;
+}
+
 
 .container {
     display: flex;
@@ -44,28 +55,129 @@ header {
 }
 
 .image-text {
-    display: flex; 
-    justify-content: center;  
-    align-items: center;  
-    text-align: left; 
-    width: 80%; 
-    max-width: 1000px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 80%;
+    max-width: 1000px;
+    position: relative; /* Make the container a positioning context for absolute positioning */
+    padding-top: 50px; /* Add space for the sun image to sit on top */
 }
 
 .image-text img {
-    width: 400px; 
+    width: 500px; 
     height: auto;
     margin-right: 20px; 
 }
 
 .image-text p {
-    font-size: 24px;
+    font-size: 30px;
     color: #333;
     margin: 0; 
     padding: 100px;
     background-color: rgb(231, 227, 215);
-    font-family: "aktiv-grotesk", sans-serif;
-    width: 60%; 
+    font-family: "good-karma-smooth-upright", sans-serif;
+    font-weight: 600;
+    font-style: normal;
 }
 
+.image-text .sun-image {
+    position: absolute; /* Position absolutely inside the .image-text container */
+    top: 250px; /* Move the sun image above the text box */
+    right: -200px; /* Adjust this value to center or move the sun left or right */
+    width: 400px; /* Resize the sun image */
+    height: auto; /* Maintain aspect ratio */
+    z-index: 2; /* Ensure the sun image is above the text box */
+}
 
+.image-text .music-image {
+    position: absolute; /* Position absolutely inside the .image-text container */
+    top: -350px; /* Move the sun image above the text box */
+    right: 200px; /* Adjust this value to center or move the sun left or right */
+    width: 400px; /* Resize the sun image */
+    height: auto; /* Maintain aspect ratio */
+    z-index: 2; /* Ensure the sun image is above the text box */
+}
+
+.image-text .matcha-image {
+    position: absolute; /* Position absolutely inside the .image-text container */
+    top: 150px; /* Move the sun image above the text box */
+    right: -225px; /* Adjust this value to center or move the sun left or right */
+    width: 400px; /* Resize the sun image */
+    height: auto; /* Maintain aspect ratio */
+    z-index: 2; /* Ensure the sun image is above the text box */
+}
+
+.image-text .matchalatte-image {
+    position: absolute; /* Position absolutely inside the .image-text container */
+    top: 700px; /* Move the sun image above the text box */
+    right: 225px; /* Adjust this value to center or move the sun left or right */
+    width: 400px; /* Resize the sun image */
+    height: auto; /* Maintain aspect ratio */
+    z-index: 2; /* Ensure the sun image is above the text box */
+}
+
+.image-text .report-image {
+    position: absolute; /* Position absolutely inside the .image-text container */
+    top: 600px; /* Move the sun image above the text box */
+    right: 225px; /* Adjust this value to center or move the sun left or right */
+    width: 400px; /* Resize the sun image */
+    height: auto; /* Maintain aspect ratio */
+    z-index: 2; /* Ensure the sun image is above the text box */
+}
+.image-text .iphone-image {
+    position: absolute; /* Position absolutely inside the .image-text container */
+    top: 700px; /* Move the sun image above the text box */
+    right: 225px; /* Adjust this value to center or move the sun left or right */
+    width: 400px; /* Resize the sun image */
+    height: auto; /* Maintain aspect ratio */
+    z-index: 2; /* Ensure the sun image is above the text box */
+}
+
+.image-text .phone-image {
+    position: absolute; /* Position absolutely inside the .image-text container */
+    top: 300px; /* Move the sun image above the text box */
+    right: 200px; /* Adjust this value to center or move the sun left or right */
+    width: 400px; /* Resize the sun image */
+    height: auto; /* Maintain aspect ratio */
+    transform: rotate(15deg);
+    z-index: 2; /* Ensure the sun image is above the text box */
+}
+
+.image-text .love-image {
+    position: absolute; /* Position absolutely inside the .image-text container */
+    top: 250px; /* Move the sun image above the text box */
+    right: -225px; /* Adjust this value to center or move the sun left or right */
+    width: 400px; /* Resize the sun image */
+    height: auto; /* Maintain aspect ratio */
+    z-index: 2; /* Ensure the sun image is above the text box */
+}
+
+.image-text .headphones-image {
+    position: absolute; /* Position absolutely inside the .image-text container */
+    top: 300px; /* Move the sun image above the text box */
+    right: -200px; /* Adjust this value to center or move the sun left or right */
+    width: 400px; /* Resize the sun image */
+    height: auto; /* Maintain aspect ratio */
+    z-index: 2; /* Ensure the sun image is above the text box */
+}
+
+.image-text .book-image {
+    position: absolute; /* Position absolutely inside the .image-text container */
+    top: 350px; /* Move the sun image above the text box */
+    right: -200px; /* Adjust this value to center or move the sun left or right */
+    width: 400px; /* Resize the sun image */
+    height: auto; /* Maintain aspect ratio */
+    z-index: 2; /* Ensure the sun image is above the text box */
+}
+
+.image-text .research-image {
+    position: absolute; /* Position absolutely inside the .image-text container */
+    top: 600px; /* Move the sun image above the text box */
+    right: 800px; /* Adjust this value to center or move the sun left or right */
+    width: 400px; /* Resize the sun image */
+    height: auto; /* Maintain aspect ratio */
+    transform: rotate(15deg);
+    z-index: 2; /* Ensure the sun image is above the text box */
+}
