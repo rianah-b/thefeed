@@ -35,7 +35,7 @@ header img {
     height: auto; 
     transform: rotate(15deg); 
     position: absolute; 
-    top: 50px; 
+    top: 100px; 
     right: 50px; 
     z-index: 0; 
 }
@@ -45,7 +45,7 @@ header .to-do-list {
     height:auto;
     position: absolute;
     transform: rotate(-25deg);
-    top: 400px;
+    top: 500px;
     left: -35px;
     z-index: 2;
 
