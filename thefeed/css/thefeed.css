@@ -8,7 +8,7 @@ body {
     margin: 0;
 }
 
-header {
+header { /* add hover effect -noopur */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -166,7 +166,7 @@ header a {
     z-index: 2; /* Ensure the sun image is above the text box */
 }
 
-.image-text .pressedflower-image { /* weird anchor */
+.image-text .pressedflower-image { 
     position: absolute; /* Position absolutely inside the .image-text container */
     top: 600px; /* Move the sun image above the text box */
     right: 700px; /* Adjust this value to center or move the sun left or right */
@@ -175,7 +175,7 @@ header a {
     z-index: 2; /* Ensure the sun image is above the text box */
 }
 
-.image-text .ladybug2 { /* weird anchor */
+.image-text .ladybug2 { 
     position: absolute; /* Position absolutely inside the .image-text container */
     top: 750px; /* Move the sun image above the text box */
     right: 10px; /* Adjust this value to center or move the sun left or right */
