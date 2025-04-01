@@ -21,6 +21,8 @@ header { /* add hover effect -noopur */
     position: relative; 
 }
 
+
+
 header .text-overlay {
     z-index: 1; 
 }
@@ -28,7 +30,9 @@ header .text-overlay {
 header h1 {
     margin: 0;
     padding: 0;
+    
 }
+
 
 header img {
     width: 500px; 
@@ -75,7 +79,7 @@ header a {
     max-width: 1000px;
     position: relative; 
     line-height: 30.5px;
-    padding-top: 50px; 
+    padding-top: 50px;  
 }
 
 .image-text img {
